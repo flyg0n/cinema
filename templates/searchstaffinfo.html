@@ -1,0 +1,16 @@
+<h4>Thông Tin Nhân Viên</h4>
+{% for staff in staffs %}
+<div class="staff">
+<h5>Tên nhân viên: {{ staff[1] }}</h5>
+<h5>Ngày sinh: {{ staff[2] }}</h5>
+<h5>Giới tính: {{ staff[3] }}</h5>
+<h5>CMND: {{ staff[4] }}</h5>
+<h5>Số điện thoại: {{ staff[6] }}</h5>
+<h5>Email: {{ staff[7] }}</h5>
+<h5>Địa chỉ: {{ staff[8] }}</h5>
+<h5>chức vụ: {{ staff[5] }}</h5>
+<h5>Lương: {{ staff[9] }}</h5>
+<h5>Mã nhân viên: {{ staff[0] }}</h5>
+<h4></h4>
+</div>
+{% endfor %}

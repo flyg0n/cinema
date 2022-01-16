@@ -1,0 +1,4 @@
+<h4>Phòng chiếu sẵn sàng cho thời gian được chọn trên</h4>
+{% for hall_id in halls %}
+<button onclick="selectShowHall({{ hall_id }})">Mã Phòng: {{ hall_id }}</button>
+{% endfor %}

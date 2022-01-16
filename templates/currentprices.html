@@ -1,0 +1,8 @@
+<h4>Chọn giá vé</h4>
+{% for price in prices %}
+<button onclick="alterPrice({{ price[0] }})">
+	<h5>{{ price[1] }} / {{ price[2] }}</h5>
+	<h6>Ghế thường: {{ price[3] }},000 VND</h6>
+	<h6>Ghế Vip: {{ price[3] + 30}},000 VND</h6>
+</button>
+{% endfor %}

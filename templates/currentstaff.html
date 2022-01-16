@@ -1,0 +1,6 @@
+<h4>Chọn Nhân Viên Để Cập Nhật Thông Tin</h4>
+{% for staff in staffs %}
+<button onclick="updateStaffFunction({{ staff[0] }})">
+	<h5>{{ staff[1]}} / {{ staff[5] }}</h5>
+</button>
+{% endfor %}

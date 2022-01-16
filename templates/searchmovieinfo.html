@@ -1,0 +1,12 @@
+<h4>Thông tin phim</h4>
+{% for movie in movies %}
+<div class="staff">
+<h5>Tên phim: {{ movie[1] }}</h5>
+<h5>Độ dài phim: {{ movie[2] }}</h5>
+<h5>Ngôn ngữ: {{ movie[3] }}</h5>
+<h5>Ngày khởi chiếu: {{ movie[4] }}</h5>
+<h5>Ngày kết thúc: {{ movie[5] }}</h5>
+<h5>Mã phim: {{ movie[0] }}</h5>
+<h4></h4>
+</div>
+{% endfor %}

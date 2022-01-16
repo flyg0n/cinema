@@ -1,0 +1,14 @@
+<h4>Thông Tin Khách Hàng</h4>
+{% for member in members %}
+<div class="staff">
+<h5>Tên khách hàng: {{ member[1] }}</h5>
+<h5>Ngày sinh: {{ member[2] }}</h5>
+<h5>Giới tính: {{ member[3] }}</h5>
+<h5>CMND: {{ member[4] }}</h5>
+<h5>Số điện thoại: {{ member[6] }}</h5>
+<h5>Email: {{ member[7] }}</h5>
+<h5>Loại khách hàng: {{ member[9] }}</h5>
+<h5>Mã khách hàng: {{ member[0] }}</h5>
+<h4></h4>
+</div>
+{% endfor %}

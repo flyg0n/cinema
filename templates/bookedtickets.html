@@ -1,0 +1,7 @@
+<h4>Vé đã đặt trong suất chiếu</h4>
+{% for ticket in tickets %}
+<div class="ticket">
+<h5>Mã vé: {{ ticket[0] }}</h5>
+<h6>Số ghế: {{ ticket[1] }} / {{ ticket[2] }}</h6>
+</div>
+{% endfor %}
