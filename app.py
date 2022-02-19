@@ -69,48 +69,6 @@ def login():
             # Account doesnt exist or username/password incorrect
     return render_template("loginfail.html")
 
-
-# @app.route("/login", methods=["GET", "POST"])
-# def verifyAndRenderRespective():
-#     username = request.form["username"]
-#     password = request.form["password"]
-
-#     try:
-
-#         if username == "manager" and password == "manager":
-
-#             res = runQuery("call delete_old()")
-#             return render_template("manager.html")
-#         elif username == "cashier" and password == "cashier":
-#             res = runQuery("call delete_old()")
-#             return render_template("cashier.html")
-#         else:
-#             res = runQuery(
-#                 "SELECT ma_nhan_vien,ten_nhan_vien,so_dien_thoai,chuc_vu FROM nhan_vien WHERE ten_nhan_vien = '"
-#                 + username
-#                 + "' and so_dien_thoai = '"
-#                 + password
-#                 + "'"
-#             )
-
-#             staffs = []
-#             for i in res:
-#                 staffs.append([i[0], i[1], i[2], i[3]])
-#             if i[0] == "":
-#                 return render_template("loginfail.html")
-#             else:
-#                 if i[3] == "cashier":
-#                     res = runQuery("call delete_old()")
-#                     return render_template("cashier.html", staffs=staffs)
-#                 if i[3] == "manager":
-#                     res = runQuery("call delete_old()")
-#                     return render_template("manager.html")
-
-#     except Exception as e:
-#         print(e)
-#         return render_template("loginfail.html")
-
-
 # Routes for cashier
 @app.route("/getMoviesShowingOnDate", methods=["POST"])
 def moviesOnDate():
